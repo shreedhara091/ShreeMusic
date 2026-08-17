@@ -34,7 +34,6 @@ async function getSongs(folder) {
 
     currFolder = folder;
 
-    // Fetch the songs from the selected playlist.
     let a = await fetch(
         `${SUPABASE_URL}/storage/v1/object/list/Songs`,
         {
@@ -54,47 +53,30 @@ async function getSongs(folder) {
         }
     );
 
-    // Check if Supabase returned an error.
-    if (!a.ok) {
-        console.error(
-            "Supabase error:",
-            a.status,
-            await a.text()
-        );
-
-        songs = [];
-        return songs;
-    }
-
-    // Convert response into JSON.
+    // Get the response as JSON
     let response = await a.json();
 
-    console.log("Songs in " + folder + ":", response);
-
-    // Store only MP3 files.
-    songs = [];
-
-    for (const element of response) {
-
-        if (
-            element.name &&
-            element.name.toLowerCase().endsWith(".mp3")
-        ) {
-            songs.push(element.name);
-        }
+    // IMPORTANT: show the actual Supabase error
+    if (!a.ok) {
+        console.error("Supabase error:", a.status, response);
+        return [];
     }
 
-    // Clear the existing song list.
-    let songUL =
-        document.querySelector(".songList")
-            .getElementsByTagName("ul")[0];
+    console.log(`Songs in ${folder}:`, response);
+
+    songs = response
+        .filter(file => file.name && file.name.endsWith(".mp3"))
+        .map(file => file.name);
+
+    let songUL = document
+        .querySelector(".songList")
+        .getElementsByTagName("ul")[0];
 
     songUL.innerHTML = "";
 
-    // Create a list item for every song.
     for (const song of songs) {
 
-        songUL.innerHTML = songUL.innerHTML + `
+        songUL.innerHTML += `
             <li>
                 <img src="img/music.svg" alt="music">
 
@@ -111,10 +93,8 @@ async function getSongs(folder) {
         `;
     }
 
-    // Add click events to every song.
     Array.from(
-        document.querySelector(".songList")
-            .getElementsByTagName("li")
+        document.querySelector(".songList").getElementsByTagName("li")
     ).forEach(e => {
 
         e.addEventListener("click", () => {
@@ -304,10 +284,7 @@ async function main() {
     // Load the default playlist.
     await getSongs("playlist-1");
 
-
-    // Load the first song without playing it.
-    if (songs.length > 0) {
-
+    if (songs && songs.length > 0) {
         playMusic(songs[0], true);
     }
 
