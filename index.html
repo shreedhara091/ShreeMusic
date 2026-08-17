@@ -4,29 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music-Player</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+    <title>ShreeMusic - Your Daily Vibes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
 </head>
 
 <body>
     <div class="container flex bg-black">
-        <div class="left">   
-            <div class="home bg-grey m1 rounded p-1">
+        <div class="left">
+            <div class="close">
+                <img width="30" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey m1 rounded p1">
                 <div class="logo">
-                    <img  src="ShreeMusic-logo.svg" alt="ShreeMusic" width="200">
+                    <img width="180" src="img/ShreeMusic-logo.png" alt="ShreeMusic" width="150">
                 </div>
                 <ul>
-                    <li><img src="home.svg" alt="home">Home</li>
-                    <li><img src="search.svg" alt="serch">Search</li>
+                    <li><img src="img/home.svg" alt="home">Home</li>
+                    <li><img src="img/search.svg" alt="serch">Search</li>
                 </ul>
             </div>
-            <div class="library bg-grey m1 rounded p-1">
-                Your Library
+            <div class="library bg-grey m1 rounded p1">
+                <div class="heading">
+                    <img src="img/library.svg" alt="playlist">
+                    <h3> Your Library</h3>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.ShreeMusic.com/in-en/legal/">Legal</a></div>
+                    <div><a href="https://www.ShreeMusic.com/in-en/safetyandprivacy/">Safety & Privacy</a></div>
+                    <div><a href="https://www.ShreeMusic.com/in-en/legal/privacy-policy/">Privacy </a></div>
+                    <div><a href="https://www.ShreeMusic.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                    <div><a href="https://www.ShreeMusic.com/in-en/accessibility/"> Accessibility</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40" class="hamburger" src="img/hamburger.svg" alt="hamburger">
+                        <img src="img/left-arrow.svg" alt="left">
+                        <img src="img/right-arrow.svg" alt="right">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn"> Log in</button>
+                </div>
+            </div>
+            <div class="ShreeFlix-Playlist">
+                <h2>ShreeMusic Playlist</h2>
+                <div class="cardContainer">
+
+                </div>
+                <div class="playbar">
+                    <div class="seekBar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="aboveBar">
+
+                        <div class="songInfo"></div>
+                        <div class="songButtons">
+                            <img width="30" id="previous" src="img/previous.svg" alt="previous">
+                            <img width="30" id="play" src="img/play-button.svg" alt="play">
+                            <img width="30" id="next" src="img/next.svg" alt="next">
+                        </div>
+                        <div class="timenvol">
+                            <div class="songTime"></div>
+                            <div class="volume">
+                                <img src="img/volume.svg" alt="volume">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="right border"></div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
