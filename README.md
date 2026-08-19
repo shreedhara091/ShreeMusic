@@ -19,6 +19,7 @@ A Spotify-inspired music player built using **HTML, CSS, and JavaScript**.
 
 ## 📸 Preview
 
+![ShreeMusic Preview](./shreemusic-preview.png)
 
 ## 🌐 Live Demo
 
@@ -42,6 +43,6 @@ Through this project, I practiced:
 
 ## 👨‍💻 Author
 
-**Shreedhar**
+**Shreedhara**
 
 GitHub: [@shreedhara091](https://github.com/shreedhara091)
