@@ -1,6 +1,6 @@
 # 🎵 ShreeMusic
 
-A Spotify-inspired music player built using **HTML, CSS, and JavaScript**.
+🎵 A responsive Spotify-inspired music player built with HTML, CSS, JavaScript, and Supabase, featuring an interactive music-player interface and a modern responsive design.
 
 ## 🚀 Features
 
@@ -13,10 +13,11 @@ A Spotify-inspired music player built using **HTML, CSS, and JavaScript**.
 
 ## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript
-
+- HTML5
+- CSS3
+- JavaScript
+- Supabase
+- Vercel
 ## 📸 Preview
 
 ![ShreeMusic Preview](./shreemusic-preview.png)
@@ -43,6 +44,9 @@ Through this project, I practiced:
 
 ## 👨‍💻 Author
 
+## 👨‍💻 Author
+
 **Shreedhara**
 
-GitHub: [@shreedhara091](https://github.com/shreedhara091)
+- GitHub: [@shreedhara091](https://github.com/shreedhara091)
+- Live Demo: [ShreeMusic](https://shreemusic.vercel.app/)
