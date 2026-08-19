@@ -23,7 +23,7 @@ A Spotify-inspired music player built using **HTML, CSS, and JavaScript**.
 
 ## 🌐 Live Demo
 
-https://shreemusic.vercel.app/
+[ShreeMusic Live Demo](https://shreemusic.vercel.app/)
 
 ## 📂 How to Run
 
