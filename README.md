@@ -26,6 +26,25 @@
 
 [🎵 Live Demo](https://shreemusic.vercel.app/)
 
+## 📁 Project Structure
+
+ShreeMusic/
+├── css/                  # Stylesheets
+├── img/                  # Images and artwork
+├── js/                   # JavaScript files
+├── index.html            # Main HTML page
+├── favicon.ico           # Website favicon
+└── README.md             # Project documentation
+
+## ✨ Highlights
+
+- Responsive music player interface
+- Interactive JavaScript controls
+- Organized frontend structure
+- Music data and functionality
+- Supabase integration
+- Deployed with Vercel
+
 ## 📂 How to Run
 
 1. Clone this repository.
@@ -41,8 +60,6 @@ Through this project, I practiced:
 * Working with DOM manipulation
 * Building a music-player interface
 * Making a responsive web interface
-
-## 👨‍💻 Author
 
 ## 👨‍💻 Author
 
