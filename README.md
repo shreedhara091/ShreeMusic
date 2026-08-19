@@ -19,11 +19,10 @@ A Spotify-inspired music player built using **HTML, CSS, and JavaScript**.
 
 ## 📸 Preview
 
-Add screenshots of your project here.
 
 ## 🌐 Live Demo
 
-Add your live project link here.
+https://shreemusic.vercel.app/
 
 ## 📂 How to Run
 
